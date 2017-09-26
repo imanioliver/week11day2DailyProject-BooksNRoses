@@ -10,18 +10,18 @@ class BookDetail extends Component {
   render() {
     if(!this.props.book) {
       return (
-        <div>Select a book to get started!</div>
+        <div className="card w-80"><span className="card-title">Select a book to get started!</span></div>
       )
     }
     return (
-      <div className="col-md-4">
-        <h3> Details for: </h3>
-        <h4 className="title">{this.props.book.title}</h4>
-        <div>{this.props.book.pages} pages</div>
-        <div>Author: {this.props.book.author}</div>
-        <div>Price: ${this.props.book.price} USD</div>
-        <div>Published: {this.props.book.published_date} by {this.props.book.publisher}</div>
-        <div>Genre: {this.props.book.category.join(", ")} </div>
+      <div className="card">
+
+        <h4 className="card-title">{this.props.book.title}</h4>
+        <div className="card-block">{this.props.book.pages} pages</div>
+        <div className="card-block">Author: {this.props.book.author}</div>
+        <div className="card-block">Price: ${this.props.book.price} USD</div>
+        <div className="card-block">Published: {this.props.book.published_date} by {this.props.book.publisher}</div>
+        <div className="card-block">Genre: {this.props.book.category.join(", ")} </div>
       </div>
     );
   }

@@ -1,0 +1,12 @@
+.selected{
+    color: magenta;
+}
+
+
+.jumbotron{
+    background-color:lightgoldenrodyellow;
+
+}
+body{
+    background-image: url(./round.png);
+}

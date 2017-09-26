@@ -7,10 +7,13 @@ import BookDetail from '../containers/BookDetail';
 class App extends Component {
     render() {
         return (
-            <div className="container-fluid">
-                <h1>Books N' Roses: Appetite for Instruction</h1>
-                <BookList/>
-                <BookDetail/>
+            <div className="container">
+
+                <div className="row">
+                    <h1 className="jumbotron">Books N' Roses: Appetite for Instruction</h1>
+                    <BookList />
+                    <BookDetail/>
+                </div>
             </div>
         );
     }
